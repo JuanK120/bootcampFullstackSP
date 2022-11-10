@@ -16,7 +16,7 @@ public class Challenge1 {
      *                   Invalid String Type exeption otherwise.
      * @return a generated random string of length 10
      */
-    public String randomString(String stringType) throws Exception {
+    public static String randomString(String stringType) throws Exception {
         String returnString;
         if (stringType == "Tipo A"){
             returnString = "54";
@@ -36,7 +36,7 @@ public class Challenge1 {
      * @param search the String we want to search in the list
      * @return true if the list does not contain the String, false otherwise
      */
-    public boolean isNotInList (List<String> stringList,String search){
+    public static boolean isNotInList (List<String> stringList,String search){
         if (stringList.contains(search)){
             return false;
         } else{
